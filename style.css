@@ -24,6 +24,18 @@ img {
     border: 1px solid #ffffffc3;
     width: 90%;
 }
+.container.shake{
+    animation: shake .3s;
+}
+@keyframes shake {
+    33%{
+        transform: translateX(-5px);
+    }
+    66%{
+        transform: translateX(5px);
+    }
+    
+}
 h2 {
     text-align: center;
     font-family: Raleway,sans-serif;
@@ -54,6 +66,7 @@ input:focus{
 input::placeholder {
     font-size: 16px;
 }
+
 .icon-input-container {
     position: relative;
 }
@@ -80,7 +93,7 @@ input::placeholder {
 }
 .lines {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     gap: 10px;
 }
 .l1,.l2,.l3 {
@@ -88,16 +101,9 @@ input::placeholder {
     height: 5px;
     margin: 15px 0 20px;
     position: relative;
+    background-color: #111;
 }
-.l1 {
-    background-color: #cf5914;
-}
-.l2 {
-    background-color: #fdeb50;
-}
-.l3 {
-    background-color: #14e214;
-}
+
 .lines span {
     position: absolute;
     left: 50%;
